@@ -78,7 +78,9 @@
 
                         <small class="h6" data-aos="zoom-in" data-aos-duration="1200" style="color: #fff;">
                             Kepada Yth. Bapak/Ibu/Saudara/i <br><br>
-                            Nama Penerima // dihapus <br><br>
+                            @if ($data != null)
+                                <h6 style="color: #fff">{{ $data }}</h6> <br><br>
+                            @endif
                             Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir di Acara Pernikahan Kami.
                         </small>
                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">

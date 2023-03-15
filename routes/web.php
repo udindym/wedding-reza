@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::any('/{receiver}', 'App\Http\Controllers\MainController@indexWithReceiver')->name('admin.dashboard');
 Route::any('/', 'App\Http\Controllers\MainController@index')->name('admin.dashboard');
 Route::get('/home', 'App\Http\Controllers\MainController@index')->name('admin.dashboard');
 Route::get('/dashboard', 'App\Http\Controllers\MainController@index')->name('admin.dashboard');
